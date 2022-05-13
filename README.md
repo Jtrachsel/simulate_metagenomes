@@ -16,11 +16,12 @@ This method helps ensure that genomes carrying plasmids have realistic copy-numb
         - 4 = output directory  
         - 5 = coverage (original script used 3.9)  
 
-    git clone https://github.com/Jtrachsel/simulate_metagenomes.git
-    conda env create -n magsim_lite --file environment.yml
-    conda activate magsim_lite
-    tar -xzvf seq_data/sequences.tar.gz
+    git clone https://github.com/Jtrachsel/simulate_metagenomes.git  
+    conda env create -n magsim_lite --file environment.yml  
+    conda activate magsim_lite  
+    tar -xzvf seq_data/sequences.tar.gz  
     ./simulate_metagenome.py 1 original_community.tsv ./seq_data/ ./output/ 3.9  
+
 
 ## Notes  
 
