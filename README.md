@@ -17,14 +17,14 @@ This method helps ensure that genomes carrying plasmids have realistic copy-numb
         - 5 = coverage (original script used 3.9)  
   
 ```  
-    git clone https://github.com/Jtrachsel/simulate_metagenomes.git  
-    conda env create -n magsim_lite --file environment.yml  
-    conda activate magsim_lite  
-    tar -xzvf seq_data/sequences.tar.gz  
-    ./simulate_metagenome.py 1 original_community.tsv ./seq_data/ ./output/ 3.9  
+git clone https://github.com/Jtrachsel/simulate_metagenomes.git  
+conda env create -n magsim_lite --file environment.yml  
+conda activate magsim_lite  
+tar -xzvf seq_data/sequences.tar.gz  
+./simulate_metagenome.py 1 original_community.tsv ./seq_data/ ./output/ 3.9  
 ```  
   
-  
+
 ## Notes  
 
 - You can change the community proflle by adding or removing organisms both in the metadata (original_community.tsv) and the seq_dat folder.  You will need to provide a plasmid/chromosome classification for each contig, and match the directory structure found in the seq_data directory.  
